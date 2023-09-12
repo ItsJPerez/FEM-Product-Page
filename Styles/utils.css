@@ -1,0 +1,100 @@
+:root {
+    --Btn-Green: hsl(158, 36%, 37%);
+    --BG-Color: hsl(30, 38%, 92%);
+    --Grey-Label: hsl(228, 12%, 48%);
+    --Btn-Text: hsl(0, 0%, 100%);
+    --Dark-Blue: hsl(212, 21%, 14%);
+
+    --fw-regular: 500;
+    --fw-bold: 700;
+
+    --ff-base: "Montserrat", sans-serif;
+    --ff-accent: "Fraunces", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .btn{
+    background-color: var(--Btn-Green);
+    color: var(--Btn-Text);
+  }
+
+
+  /* xs */
+@media (min-width: 475px) {
+    .container {
+      max-width: 475px;
+    }
+  }
+  
+  /* sm */
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  
+  /* md */
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  /* lg */
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  
+  /* xl */
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  
+  /* 2xl */
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1536px;
+    }
+  }

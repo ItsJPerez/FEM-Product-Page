@@ -64,7 +64,7 @@ p, h1, h2, h3, h4, h5, h6 {
     font-weight: var(--fw-bold);
     border-radius: 0.5rem ;
     font-size: 0.925rem;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 /* Learned inline flex today */
 
@@ -76,11 +76,6 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 15px;
   height: 16px;
 }
-
-/* New syntax learned today as well */
-  /* .btn:is(:hover, :focus){
-    background-color: var(--Btn-Green-Hover);
-  } */
 
 
   /* xs */

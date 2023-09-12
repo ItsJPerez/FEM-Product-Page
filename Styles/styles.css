@@ -7,12 +7,8 @@ body{
     min-height: 100vh;
     place-content: center;
     margin: 1rem;
-    /* Add margin: 1rem after everything */
 }
 
-/* main{
-    border: 2px solid lightblue;
-} */
 
 .product {
     border-radius: .5rem ;
@@ -21,7 +17,6 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-
 img{
     height: 100%;
     width: 100%;
@@ -29,10 +24,11 @@ img{
 
 .product-content{
     background-color: var(--Btn-Text);
-    padding:2rem;
+    padding:1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;/
+    justify-content: center;
+    gap: 1rem;
 }
 
 .category{
@@ -68,33 +64,38 @@ img{
 }
 
 
-
-
-
-
-
-
 @media(min-width:475px){
-
 }
+
 @media(min-width:640px){
  
 }
-@media(min-width:768px){
 
-}
-@media(min-width:1024px){
+@media(min-width:768px){
     .product{
-        display: flex;
         flex-direction: row;
     }
+}
+
+@media(min-width:1024px){
+    article{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .product-content{
+        padding: 1rem 3rem 1rem 1rem ;
+        width: 75%;
+       }
     .btn:is(:hover, :focus){
         background-color: var(--Btn-Green-Hover);
-      }
+      } 
     
+
 }
+
 @media(min-width:1280px){
 
 }
+
 @media(min-width:1536px){
 } 

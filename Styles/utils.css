@@ -1,5 +1,6 @@
 :root {
     --Btn-Green: hsl(158, 36%, 37%);
+    --Btn-Green-Hover: hsl(158, 36%, 20%);
     --BG-Color: hsl(30, 38%, 92%);
     --Grey-Label: hsl(228, 12%, 48%);
     --Btn-Text: hsl(0, 0%, 100%);
@@ -39,10 +40,6 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-#root, #__next {
-  isolation: isolate;
-}
-
 .container {
     width: 100%;
     margin-left: auto;
@@ -52,9 +49,38 @@ p, h1, h2, h3, h4, h5, h6 {
   }
   
   .btn{
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    padding: .75em 1.5em;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    border: 0;
     background-color: var(--Btn-Green);
     color: var(--Btn-Text);
+    font-weight: var(--fw-bold);
+    border-radius: 0.5rem ;
+    font-size: 0.925rem;
+    transition: all 0.5s ease-in-out;
   }
+/* Learned inline flex today */
+
+
+/* Learned this syntax as well */
+.btn[data-icon="shopping-cart"]::before{
+  content: "";
+  background-image: url(/images/icon-cart.svg);
+  width: 15px;
+  height: 16px;
+}
+
+/* New syntax learned today as well */
+  /* .btn:is(:hover, :focus){
+    background-color: var(--Btn-Green-Hover);
+  } */
 
 
   /* xs */

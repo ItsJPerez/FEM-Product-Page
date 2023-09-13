@@ -16,6 +16,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    max-width: 650px;
 }
 img{
     height: 100%;
@@ -24,7 +25,7 @@ img{
 
 .product-content{
     background-color: var(--Btn-Text);
-    padding:1.5rem;
+    padding: 1rem 1.5rem 1rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,16 +40,18 @@ img{
 }
 
 .product-title{
-    font-size: 2em;
+    width: 75%;
+    font-size: 2.5em;
     font-family: var(--ff-accent);
 }
 .product-description{
     color: var(--Grey-Label);
+    width: 75%;
 }
 .price-content{
     display: flex;
     align-items: center;
-    gap: 1.2rem;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 .price{
@@ -78,23 +81,13 @@ img{
 }
 
 @media(min-width:1024px){
-    article{
-        width: 50%;
-        margin: 0 auto;
-    }
-    .product-content{
-        padding: 1rem 3rem 1rem 1rem ;
-        width: 75%;
-       }
+    
     .btn:is(:hover, :focus){
         background-color: var(--Btn-Green-Hover);
       } 
-    
-
 }
 
 @media(min-width:1280px){
-
 }
 
 @media(min-width:1536px){

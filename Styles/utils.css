@@ -65,10 +65,8 @@ p, h1, h2, h3, h4, h5, h6 {
     font-size: 0.925rem;
     transition: all 0.2s ease-in-out;
   }
-/* Learned inline flex today */
 
 
-/* Learned this syntax as well */
 .btn[data-icon="shopping-cart"]::before{
   content: "";
   background-image: url(/images/icon-cart.svg);

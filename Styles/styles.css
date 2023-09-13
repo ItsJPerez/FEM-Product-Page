@@ -9,6 +9,9 @@ body{
     margin: 1rem;
 }
 
+article{
+    background-color: var(--Btn-Text);
+}
 
 .product {
     border-radius: .5rem ;
@@ -18,6 +21,9 @@ body{
     flex-direction: column;
     max-width: 650px;
 }
+.product-img{
+    width: 125%;
+}
 img{
     height: 100%;
     width: 100%;
@@ -25,7 +31,7 @@ img{
 
 .product-content{
     background-color: var(--Btn-Text);
-    padding: 1rem 1.5rem 1rem 1rem;
+    padding: 1rem 2rem 1rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,7 +46,6 @@ img{
 }
 
 .product-title{
-    width: 75%;
     font-size: 2.5em;
     font-family: var(--ff-accent);
 }
@@ -65,6 +70,9 @@ img{
    text-decoration: line-through;
    font-size: .9rem;
 }
+.attribution{
+    text-align: center;
+}
 
 
 @media(min-width:475px){
@@ -78,10 +86,15 @@ img{
     .product{
         flex-direction: row;
     }
+    .product-title{
+        font-size: 2rem;
+    }
 }
 
 @media(min-width:1024px){
-    
+    .product-title{
+        font-size: 2.5rem;
+    }
     .btn:is(:hover, :focus){
         background-color: var(--Btn-Green-Hover);
       } 

@@ -22,7 +22,7 @@ article{
     max-width: 700px;
 }
 .product-img{
-    width: 125%;
+    width: 115%;
 }
 img{
     height: 100%;
@@ -31,7 +31,7 @@ img{
 
 .product-content{
     background-color: var(--Btn-Text);
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,7 +46,7 @@ img{
 }
 
 .product-title{
-    font-size: 2.5em;
+    font-size: 1.8rem;
     font-family: var(--ff-accent);
 }
 .product-description{
@@ -93,7 +93,8 @@ img{
 
 @media(min-width:1024px){
     .product-title{
-        font-size: 2.5rem;
+        font-size: 2.7rem;
+        line-height: 2.6rem;
     }
     .btn:is(:hover, :focus){
         background-color: var(--Btn-Green-Hover);
